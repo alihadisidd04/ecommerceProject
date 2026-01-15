@@ -1,6 +1,10 @@
 import './OrderPage.css'
 import { MainHeader } from '../components/MainHeader'
 import { Link } from 'react-router'
+
+// 1. IMPORT ONLY THE ICON
+import buyAgainIcon from '../assets/images/icons/buy-again.png';
+
 export function OrderPage() {
     return (
         <>
@@ -34,7 +38,8 @@ export function OrderPage() {
 
                         <div className="order-details-grid">
                             <div className="product-image-container">
-                                <img src="images/products/athletic-cotton-socks-6-pairs.jpg" />
+                                {/* 2. PRODUCT IMAGE: References public folder (String) */}
+                                <img src="/images/products/athletic-cotton-socks-6-pairs.jpg" alt="Socks" />
                             </div>
 
                             <div className="product-details">
@@ -48,7 +53,8 @@ export function OrderPage() {
                                     Quantity: 1
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="../assets/images/icons/buy-again.png" />
+                                    {/* 3. ICON: Uses the imported variable */}
+                                    <img className="buy-again-icon" src={buyAgainIcon} alt="Buy Again" />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
@@ -62,7 +68,7 @@ export function OrderPage() {
                             </div>
 
                             <div className="product-image-container">
-                                <img src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" />
+                                <img src="/images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="Shirt" />
                             </div>
 
                             <div className="product-details">
@@ -76,7 +82,7 @@ export function OrderPage() {
                                     Quantity: 2
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={buyAgainIcon} alt="Buy Again" />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>
@@ -113,7 +119,7 @@ export function OrderPage() {
 
                         <div className="order-details-grid">
                             <div className="product-image-container">
-                                <img src="images/products/intermediate-composite-basketball.jpg" />
+                                <img src="/images/products/intermediate-composite-basketball.jpg" alt="Basketball" />
                             </div>
 
                             <div className="product-details">
@@ -127,7 +133,7 @@ export function OrderPage() {
                                     Quantity: 2
                                 </div>
                                 <button className="buy-again-button button-primary">
-                                    <img className="buy-again-icon" src="images/icons/buy-again.png" />
+                                    <img className="buy-again-icon" src={buyAgainIcon} alt="Buy Again" />
                                     <span className="buy-again-message">Add to Cart</span>
                                 </button>
                             </div>

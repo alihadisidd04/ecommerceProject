@@ -6,9 +6,9 @@ export function MainHeader() {
             <div className="left-section">
                 <NavLink to="/" className="header-link">
                     <img className="logo"
-                        src="images/logo-white.png" />
+                        src="src/assets/images/logo-white.png" />
                     <img className="mobile-logo"
-                        src="images/mobile-logo-white.png" />
+                        src="src/assets/images/mobile-logo-white.png" />
                 </NavLink>
             </div>
 
@@ -16,7 +16,7 @@ export function MainHeader() {
                 <input className="search-bar" type="text" placeholder="Search" />
 
                 <button className="search-button">
-                    <img className="search-icon" src="images/icons/search-icon.png" />
+                    <img className="search-icon" src="src/assets/images/icons/search-icon.png" />
                 </button>
             </div>
 
@@ -27,7 +27,7 @@ export function MainHeader() {
                 </NavLink>
 
                 <NavLink className="cart-link header-link" to="/checkout">
-                    <img className="cart-icon" src="images/icons/cart-icon.png" />
+                    <img className="cart-icon" src="src/assets/images/icons/cart-icon.png" />
                     <div className="cart-quantity">3</div>
                     <div className="cart-text">Cart</div>
                 </NavLink>
