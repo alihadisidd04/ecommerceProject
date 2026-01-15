@@ -5,8 +5,10 @@ import './HomePage.css'
 export function HomePage() {
     return (
         <>
+            <link rel="icon" type="image/svg+xml" href="/home-favicon.png" />
+
             <MainHeader />
-            <title>Ecommerce Project</title>
+            <title> Home Page</title>
 
 
             <div className="home-page">
