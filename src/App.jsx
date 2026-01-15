@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router';
 import { HomePage } from './Pages/HomePage'
-import './App.css'
 import { CheckOut } from './Pages/CheckOut';
 import { OrderPage } from './Pages/OrderPage';
 import { TrackingPage } from './Pages/TrackingPage';
+import './App.css'
 function App() {
 
   return (
